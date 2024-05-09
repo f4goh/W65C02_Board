@@ -79,7 +79,7 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 - Beware : with old via MOS6522 R4=100 ohms
 
 ---
-## Few programs examples (4800 bauds 1mHz clock)
+## Few programs examples (4800 bauds 1MHz clock)
 
 [Interactive demo](demo/README.md)
 ---
