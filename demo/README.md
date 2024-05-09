@@ -5,7 +5,7 @@
 miniterm /dev/ttyUSB0 4800 -e
 ```
 
-- From G-Pascal video [demos](https://vimeo.com/682663375)
+- From G-Pascal video [demo](https://vimeo.com/682663375)
 
 - After launching minicom press the green NMI button
 

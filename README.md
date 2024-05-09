@@ -44,8 +44,9 @@ For MOS 6502 microcontroller (No compatibility with G-Pascal ROM):
 ---
 ## ROM Configutration :
 
-In gpascal.asm HIGHEST_RAM is $6FFF
-So gpascal_0x6fff.bin was generated for the 27c256 EPROM
+In gpascal.asm HIGHEST_RAM is $6FFF,
+
+gpascal_0x6fff.bin was generated for the 27c256 EPROM
 
 ```console
 ;
@@ -62,7 +63,6 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 | ------ | ------ | ------ |
 | RAM | #0000 | #6FFF |
 | EPROM (27C256) | #8000 | #FFFF |
-| EEPROM (28C64) | #8000 | #9FFF |
 | VIA | #7FF0 | #7FFF |
 | IO1 | #7FE0 | #7FEF |
 | IO2 | #7FD0 | #7FDF |
@@ -76,7 +76,7 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 
 # Original Schématics
 
-![original](images/proto.png "board")
+![original](images/ben.png "benboard")
 
 # Dedicated ports on the via 6522
 
@@ -92,13 +92,22 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 ---
 ## Few programs examples (autobaud, but test with 9600 bauds)
 
-[interactive demo](demo/README.md)
+[Interactive demo](demo/README.md)
 ---
 ## Usefull links
 
-- Nickgammon [G-Pascal](https://github.com/nickgammon/G-Pascal/tree/master)
+- Nickgammon G-Pascal [main page](http://www.gammon.com.au/G-Pascal/index.htm)
+
+- Nickgammon G-Pascal [github](https://github.com/nickgammon/G-Pascal/tree/master)
+
+- Nickgammon G-Pascal [info](http://www.gammon.com.au/G-Pascal/pascal_compiler.htm)
+
+- Nickgammon ASM [info](http://www.gammon.com.au/G-Pascal/assembler.htm)
 
 - Ben Eater [Build a 6502 computer](https://eater.net/)
+
+- Build your [own ORIC ATMOS](https://github.com/f4goh/oric/tree/main/Oric1-Atmos)
+
 ---
 ```console
 G-Pascal compiler, version 4.07.
