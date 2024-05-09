@@ -1,0 +1,23 @@
+GAL22V10
+22V10
+
+A15  A14   A13 A12 A11 A10 A9  A8    A7   A6    A5     GND
+A4   PHI2  RW  IO4 IO3 IO2 IO1 CSVIA CSWR CSRAM CSROM  VCC
+
+/CSVIA= /A15 *  A14 *  A13 *  A12 * A11 * A10 * A9 * A8 * A7 *  A6 *  A5 *  A4 ;0x7FFx  1111
+/IO1=   /A15 *  A14 *  A13 *  A12 * A11 * A10 * A9 * A8 * A7 *  A6 *  A5 * /A4 ;0x7FEx  1110
+/IO2=   /A15 *  A14 *  A13 *  A12 * A11 * A10 * A9 * A8 * A7 *  A6 * /A5 *  A4 ;0x7FDx  1101
+/IO3=   /A15 *  A14 *  A13 *  A12 * A11 * A10 * A9 * A8 * A7 *  A6 * /A5 * /A4 ;0x7FCx  1100
+/IO4=   /A15 *  A14 *  A13 *  A12 * A11 * A10 * A9 * A8 * A7 * /A6 *  A5 *  A4 ;0x7FBx  1011 -
+
+
+CSWR = RW 
+
+/CSRAM = /A15 * /A14 * PHI2 + /A15 * /A13 * PHI2 + /A15 * /A12 * PHI2 ; 0000 à 6FFF
+
+/CSROM = A15 ; 8000 à FFFF
+
+   
+DESCRIPTION
+GAMMON address decoder
+
