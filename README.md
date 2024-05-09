@@ -76,6 +76,8 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 
 ![schematicsramrom](schematics/RAM_ROM.png "schematics RAM ROM")
 
+- Beware : with old via MOS6522 R4=100 ohms
+
 ---
 ## Few programs examples (4800 bauds 1mHz clock)
 
