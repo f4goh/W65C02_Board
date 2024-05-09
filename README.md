@@ -14,8 +14,8 @@ Type H for help.
 ## Features :
 
 - W65C02 microcontroller with Nick Gammon G-Pascal ROM ;
-- 28 KiB EPROM for G-Pascal ;
-- 32KiB RAM ;
+- 32 KiB EPROM for G-Pascal ;
+- 28 KiB RAM ;
 - Integrated VIA 6522 ;
 - ORIC-1 compatible expansion connector;
 - Address decoding with a GAL22V10;

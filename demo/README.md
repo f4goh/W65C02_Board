@@ -1,7 +1,11 @@
 
-## Some sample programmes (with linux minicom at 4800 bauds)
+## Some samples programmes (with linux miniterm at 4800 bauds)
 
-- G-Pascal [G-Pascal](https://vimeo.com/682663375)
+```console
+miniterm /dev/ttyUSB0 4800 -e
+```
+
+- From G-Pascal video demos [G-Pascal](https://vimeo.com/682663375)
 
 - After launching minicom press the green NMI button
 
