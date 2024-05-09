@@ -18,30 +18,17 @@ Type H for help.
 - 32 KiB EPROM for G-Pascal ;
 - 28 KiB RAM ;
 - Integrated VIA 6522 ;
-- ORIC-1 compatible expansion connector;
-- Address decoding with a GAL22V10;
-- USB serial interface with FTDI232 module.
-- Gerber file available
+- ORIC-1 compatible expansion connector ;
+- Address decoding with a GAL22V10 ;
+- USB serial interface with FTDI232 module ;
+- Gerber file available.
 
 
 - The GAL JED file is generated using the utility [GALasm](https://github.com/daveho/GALasm) under linux.
-- the programmer used is a [XGECU - pro](https://www.aliexpress.com/premium/XGecu.html)
+- The programmer used is a [XGECU - pro](https://www.aliexpress.com/premium/XGecu.html)
 - It is capable of programming AT89S52, E(E)PROMs, and Lattice GAL22V10.
 ---
-## CPU straps :
 
-For W65C02 microcontroller :
-- J7  : open
-- J11 : short
-- J2  : open
-- J3  : short
-
-For MOS 6502 microcontroller (No compatibility with G-Pascal ROM):
-- J7  : short
-- J11 : open
-- J2  : short
-- J3  : open
----
 ## ROM Configutration :
 
 In gpascal.asm HIGHEST_RAM is $6FFF,
@@ -74,9 +61,9 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 
 ![board](images/proto.png "board")
 
-# Original Schématics
+# Original Schematics
 
-![original](images/ben.png "benboard")
+![original](schematics/ben.png "benboard")
 
 # Dedicated ports on the via 6522
 
@@ -90,9 +77,23 @@ HIGHEST_RAM  = $6FFF    ; with GAL22V10
 ![schematicsramrom](schematics/RAM_ROM.png "schematics RAM ROM")
 
 ---
-## Few programs examples (autobaud, but test with 9600 bauds)
+## Few programs examples (4800 bauds 1mHz clock)
 
 [Interactive demo](demo/README.md)
+---
+## CPU straps :
+
+For W65C02 microcontroller :
+- J7  : open
+- J11 : short
+- J2  : open
+- J3  : short
+
+For MOS 6502 microcontroller (No compatibility with G-Pascal ROM):
+- J7  : short
+- J11 : open
+- J2  : short
+- J3  : open
 ---
 ## Usefull links
 
