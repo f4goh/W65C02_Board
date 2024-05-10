@@ -18,6 +18,8 @@ Type H for help.
 - 32 KiB EPROM for G-Pascal ;
 - 28 KiB RAM ;
 - Integrated VIA 6522 ;
+- SPI
+- I2C
 - ORIC-1 compatible expansion connector ;
 - Address decoding with a GAL22V10 ;
 - USB serial interface with FTDI232 module ;
