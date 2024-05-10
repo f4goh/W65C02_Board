@@ -26,7 +26,7 @@ Type H for help.
 
 - The GAL JED file is generated using the utility [GALasm](https://github.com/daveho/GALasm) under linux.
 - The programmer used is a [XGECU - pro](https://www.aliexpress.com/premium/XGecu.html)
-- It is capable of programming AT89S52, E(E)PROMs, and Lattice GAL22V10.
+- It is capable of programming E(E)PROMs, and Lattice GAL22V10.
 ---
 
 ## ROM Configutration :
